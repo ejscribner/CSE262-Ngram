@@ -1,0 +1,18 @@
+run
+;set _root_.scala.collection.Seq(shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/private/var/folders/z_/lpwpg7ts2px6xcmlktg_2k540000gn/T/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "");apply -cp "/Users/Elliot/Library/Application Support/IntelliJIdea2017.2/Scala/launcher/sbt-structure-1.2.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+exit
+;set _root_.scala.collection.Seq(shellPrompt := { _ => "" },SettingKey[_root_.scala.Option[_root_.sbt.File]]("sbtStructureOutputFile") in _root_.sbt.Global := _root_.scala.Some(_root_.sbt.file("/private/var/folders/z_/lpwpg7ts2px6xcmlktg_2k540000gn/T/sbt-structure.xml")),SettingKey[_root_.java.lang.String]("sbtStructureOptions") in _root_.sbt.Global := "");apply -cp "/Users/Elliot/Library/Application Support/IntelliJIdea2017.2/Scala/launcher/sbt-structure-1.2.jar" org.jetbrains.sbt.CreateTasks;*/*:dumpStructure
+exit
+run
+run -r
+run
+run -r
+run
+run -r
+run
+run -r
+run
+rn -r
+run -r
+console
+run -r
