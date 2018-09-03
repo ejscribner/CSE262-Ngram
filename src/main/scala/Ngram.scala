@@ -3,4 +3,5 @@ object Ngram extends App {
   if (args.length > 0) {
     println(args(0))
   }
+  
 }
