@@ -16,3 +16,11 @@ rn -r
 run -r
 console
 run -r
+run
+run test.txt
+run
+run test.txt
+run
+run test.txt
+run
+run test.txt
