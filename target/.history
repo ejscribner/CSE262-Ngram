@@ -24,3 +24,27 @@ run
 run test.txt
 run
 run test.txt
+run
+run -r
+run
+run f
+f
+run test
+sbt "f"
+run
+run test.txt
+run
+run test.txt
+run
+run test.txt
+repl
+console
+run test.txt
+console
+run test.txt
+console
+run test.txt
+println(pairCounts)
+run test.txt
+console
+run test.txt
