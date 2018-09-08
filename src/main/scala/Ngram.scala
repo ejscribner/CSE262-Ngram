@@ -1,7 +1,12 @@
+/*
+Elliot Scribner
+CSE 262
+Prog1: Ngram
+ */
+
 import scala.io.Source
 import scala.collection.JavaConversions._
 import scala.collection.mutable.{Map => MutableMap}
-
 
 object Ngram {
     def main(args: Array[String]): Unit = {
@@ -14,30 +19,27 @@ object Ngram {
             var line = Source.fromFile(filename).mkString.toLowerCase
             val words = line.split("\\s").toList
             val pairCounts = createTuple(words)
-            println(pairCounts)
-            //println(mostLikelyNextWord("serious", pairCounts))
+            var wordsUnique = words.distinct
+            wordsUnique.iterator.foreach(x => {
+                println(x + " " + mostLikelyNextWord(x, pairCounts))
+            })
         }
     }
 
     def createTuple(words: List[String]): Map[Tuple2[String, String], Int] = {
+        val pairs = words.zip(words.drop(1))
         var pairCountsImmutable = Map[Tuple2[String, String], Int]()
         val pairCounts = collection.mutable.Map(pairCountsImmutable.toSeq: _*)
-        var i = 0
-        for (i <- 0 to words.length - 2) {
-            val currentCount: Int = pairCounts.getOrElse((words(i), words(i + 1)), 0)
-            if (pairCounts.exists(_ == (words(i), words(i + 1)) -> currentCount)) {
-                val newCount = currentCount + 1
-                newCount.toString()
-                var key = pairCounts(words(i), words(i + 1))
-                key = key + 1
-                pairCounts((words(i), words(i + 1))) = key
-
-            } else {
-                pairCounts += (words(i), words(i + 1)) -> 1
-            }
+        pairs.map {
+            x =>
+                if (pairCounts.contains(x)) {
+                    pairCounts(x) = pairCounts(x) + 1
+                } else {
+                    pairCounts += (x -> 1)
+                }
         }
-        var pairCountsImmutable2 = collection.immutable.Map(pairCounts.toList: _*)
-        return pairCountsImmutable2
+        pairCountsImmutable = collection.immutable.Map(pairCounts.toList: _*)
+        return pairCountsImmutable
     }
 
     def countAll(word: String, pairCounts: Map[Tuple2[String, String], Int]): Int = {
@@ -67,7 +69,7 @@ object Ngram {
         pairCounts.iterator.foreach(x => {
             if (x._1._1 == given) {
                 if (x._2 > currentCounts) {
-                    val currentCounts = x._2
+                    currentCounts = x._2
                     word = x._1._2
                 }
             }
