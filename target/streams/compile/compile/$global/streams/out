@@ -1,9 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/Elliot/Desktop/Code/Scala/CSE262/ngram/src/main/scala/Ngram.scala:27:28: value += is not a member of scala.collection.immutable.Map[(String, String),Int][0m
-[0m[[0m[31merror[0m] [0m[0m                pairCounts += (words(i), words(i + 1)) -> currentCount + 1[0m
-[0m[[0m[31merror[0m] [0m[0m                           ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/Elliot/Desktop/Code/Scala/CSE262/ngram/src/main/scala/Ngram.scala:27:74: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Int(1)[0m
-[0m[[0m[31merror[0m] [0m[0m required: String[0m
-[0m[[0m[31merror[0m] [0m[0m                pairCounts += (words(i), words(i + 1)) -> currentCount + 1[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                         ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Elliot/Desktop/Code/Scala/CSE262/ngram/src/main/scala/Ngram.scala:35:48: too many arguments (3) for method update: (key: (String, String), value: Int)Unit[0m
+[0m[[0m[31merror[0m] [0m[0m                    pairCounts("the", "man") = key[0m
+[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

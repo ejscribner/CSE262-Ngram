@@ -48,3 +48,19 @@ println(pairCounts)
 run test.txt
 console
 run test.txt
+List(the, man, the, dog, the, horse, the, man, the, man, the, man)
+run test.txt
+p1(of:String, given:String)
+run test.txt
+run pride.txt
+run test.txt
+run pride.txt
+run test.txt
+run pride.txt
+run test.txt
+run pride.txt
+sbt test.txt
+run test.txt
+run pride.txt
+run test.txt
+run pride.txt
