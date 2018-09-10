@@ -1,4 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/Elliot/Desktop/Code/Scala/CSE262/ngram/src/main/scala/Ngram.scala:16:19: reassignment to val[0m
-[0m[[0m[31merror[0m] [0m[0m            words = words.distinct[0m
-[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/Elliot/Desktop/Code/Scala/CSE262/ngram/src/main/scala/Ngram.scala:23:57: not found: value pairCounts[0m
+[0m[[0m[31merror[0m] [0m[0m                println(x + " " + mostLikelyNextWord(x, pairCounts))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                        ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
